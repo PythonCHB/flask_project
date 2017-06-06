@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{%  block title %} {% endblock %}</title>
+</head>
+<body>
+<h>Base Template</h>
+
+{% block content %}
+
+<h2>Anything in the base overwritten unless you use super() in the child templates</h2>
+{% endblock %}
+	
+</body>
+</html>	

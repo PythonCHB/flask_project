@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OCC  </title>
+
+ <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style2.css') }}"> 
+ 
+ 
+</head>
+
+<body>
+
+<div id="container">
+	<div id="header">
+        <h1><span class="blue-text">OCC</span> of Greater Seattle </h1>
+        <h2> What Did You Do to Make OCC Better <span class="white-text">!</span></h2>
+     </div><!--header end-->
+        
+    <div id="menu">
+        <ul>
+                <li class="menuitem"><a href="home">Home</a></li> 
+                <li class="menuitem"><a href="about">About Us</a></li>
+                <li class="menuitem"><a href="browse">Weekly Schedule</a></li>
+                <li class="menuitem"><a href="contact">Contact Us</a></li>
+                <li class="menuitem"><a href="register">Register</a></li>
+                <li class="menuitem"><a href="comment">Community Board</a></li>
+        </ul>
+    </div><!--menu end-->
+	
+    <div id="leftmenu">
+        <h3>Our Area of Experties</h3>
+        <ul>
+            <li><a href="browse.html">Python</a></li>
+            <li><a href="browse.html">RedHat Linux</a></li>
+            <li><a href="browse.html">Flask</a></li>
+            <li><a href="browse.html">WebDeveloper</a></li>
+            <li><a href="browse.html">Networking</a></li>
+            <li><a href="browse.html">Cisco and WatchGuard Firewall</a></li>
+            <li><a href="browse.html">Branch office Vpn</a></li>
+            <li><a href="browse.html">Mobile VPN</a></li>
+        </ul>
+    </div><!--leftmenu end-->
+    
+	<div id="content" style="background-color: teal;">
+
+
+        {% block body %}
+
+
+        {% endblock %}
+
+
+    </div><!--content end-->
+	   
+</div><!--container end-->
+<div style="clear:both"></div>
+<!-- <footer>
+    Copyright 2017, Abdishu Hagi
+    
+</footer> -->
+</body>
+
+
+
+</html>

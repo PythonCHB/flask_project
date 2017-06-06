@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+  <div class="container theme-showcase" role="main">
+
+      <div class="jumbotron">
+
+        <h1> OCC Comment  Boards</h1><br><br>
+        <p>Don't just wait for good things to happen to you. Work hard to achieve your goals.<br><br>
+        Don't criticize other people if you're not perfect yourself.<br><br>
+        You can't live completely independently. Everyone needs help from other people.<br><br>
+
+        People who bravely go after what they want are more successful than people who try to live safely.<br><br>
+
+        We OCC beleive that the pen is mightier than the sword and the tongue has no bones but is strong enough to break a heart.<br><br> So please be careful with your words. Please sign the community board for your excellent constractive suggestion or comment.<br><br>
+
+        </p>
+        <h2>We are very welcome and open to constructive criticism.</h2> <br> <p> Pleases leave your comment bellow as it help us immensely</p>
+        <br><br>
+        <a type="button" class="btn btn-link" href="{{ url_for('sign') }}">Sign in</a><br><br>
+      </div>
+
+      <div class="page-header">
+      {% for c in result %}
+      <div class="page-header">
+
+        <h1>{{ c.name }}</h1>
+      
+      </div>
+      <div class="well">
+        <p>{{ c.comment }}</p>
+
+      </div>
+      {% endfor %}
+
+    </div> <!-- /container -->
+
+{% endblock %}
+
+
+

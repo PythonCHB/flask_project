@@ -1,0 +1,175 @@
+*{
+		margin:0 auto 0 auto;
+		text-align:left;
+
+}
+
+body{
+
+		margin:0;
+		padding:0;
+		text-align:left;
+		font-size:13px;
+		font-family:arial,helvetica,sens-serif;
+		color:#000;
+		background-color:teal;
+		background-image:url(../image/background.png);
+		background-repeat-x;
+}
+
+
+#container{
+
+		width:960px;
+		
+}
+
+
+#header{
+
+		width:960px;
+		height:85px;
+	
+}
+
+#header h1{
+		float:left;
+		color:#ffffff;
+		font-size:44px;
+		padding:20px 0 0 20px;
+}
+
+#header h2{
+
+
+		float:right;
+		color:#ffffff;
+		padding:40px 20px 0 0;
+
+}
+
+#header h1 span.blue-text{
+
+	 	color:yellow;
+}
+
+#menu {
+
+		display:block;
+		float:left;
+		clear:both;
+		width:960px;
+		height:54px;
+}
+
+#menu ul{
+		list-style:none;
+		padding:0;
+		padding-top:15px;
+		margin-left:auto;
+		width:960px;
+
+
+
+}
+
+#menu li{
+
+		list-style:none;
+		padding:0;
+		display:inline;
+}
+
+#menu li a{
+
+		float:left;
+		text-decoration:none;
+		color:white;
+		text-align:center;
+		font-size:15px;
+		font-weight:bold;
+		padding:0 13px 0 10px;
+
+}
+
+#leftmenu{
+
+	float:left;
+	width:190px;
+	background:#1C478E;
+	margin-top:15px;
+	border-radius:10px;
+	padding:15px 20px 10px 10px;
+
+}
+
+
+#leftmenu ul{
+	list-style:none;
+	padding:0;
+}
+
+
+#leftmenu li{
+	list-style:none;
+	padding: 15px 0 8px 0;
+	border-bottom:1px dashed #fff;
+}
+#leftmenu h3{
+
+	color:#ffffff;
+	padding:0;
+	padding-bottom:8px;
+	border-bottom:#fff solid 2px;
+	font-size:16px;
+
+}
+
+
+
+#leftmenu a,#leftmenu a:visited{
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:14px;
+
+
+}
+
+#content{
+	display:block;
+	width:680px;
+	margin-top:15px;
+	float:left;
+	background:hsla(0,45%,35%,0.5);
+	border-radius:10px;
+	padding-left:10px;
+	border:6px solid #1C478E;
+	padding:15px;
+	margin-left:15px;
+}
+
+#content h3 {
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 0;
+	color:#054dbc;
+
+
+}
+
+.float{
+
+	float:right;
+}
+
+label{
+
+			display:inline-block;
+			width:150px;
+		}
+table {
+display:inline-block;
+padding:15px;
+
+}		
