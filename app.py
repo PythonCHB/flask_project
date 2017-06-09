@@ -1,4 +1,5 @@
-
+##CHB: you really don't want all this in one file
+##     at least break out the models (DB stuff) from the views
 
 from flask import Flask, render_template, request, redirect,url_for,session, abort
 
@@ -20,6 +21,7 @@ db = SQLAlchemy(app)
 class Comment(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     name = db.Column(db.String(20))
+##CHB: does SQLAlchemy suporrt an unlimited size text type??
     comment = db.Column(db.String(1000))
 
     def __init__(self, name, comment):
@@ -30,6 +32,7 @@ class Register(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     name = db.Column(db.String(20))
     email = db.Column(db.String(20))
+# kinda short for an email address!
     password = db.Column(db.String(255))
 
     def __init__(self, name, email,password):
@@ -43,6 +46,7 @@ class Contact(db.Model):
     name = db.Column(db.String(20))
     email = db.Column(db.String(25))
     phone = db.Column(db.String(25))
+ ## is there not a time Type?
     time = db.Column(db.String(25))
     budget = db.Column(db.String(25))
     donate = db.Column(db.String(25))
@@ -71,6 +75,11 @@ def login():
 
     name = Register.query.filter_by(name=name)
     password = Register.query.filter_by(password=password)
+
+    ## you don't want to store the password as plain text!
+    ##  I"m not security expert, but I think you want to store a hash of the password
+    ##   then you check a hash of what they pass in against the has stored
+    ##     import hashlib ....
 
     if request.method =='POST':
 
